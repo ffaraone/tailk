@@ -20,7 +20,7 @@ jobs:
         poetry install --no-root
     - name: Linting
       run: |
-        poetry run ruff
+        poetry run ruff check .
     - name: Testing
       run: |
         poetry run pytest
